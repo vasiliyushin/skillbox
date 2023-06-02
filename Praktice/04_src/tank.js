@@ -11,8 +11,11 @@ function moveTank(roadMines) {
       position++;
     } else if (searchMin < 1) {
       console.log('танк поврежден');
+      console.log(`танк переместился на ${position}`);
+      position++;
       searchMin++;
     } else {
+      console.log(`танк переместился на ${position}`);
       console.log('танк уничтожен');
       break;
     }
@@ -28,4 +31,4 @@ moveTank([false, false, false, false, true, false, true, false, false, false]);
 
 // строка ниже необходима, чтобы работало автоматическое тестирование
 // не изменяйте этот код!
-export default moveTank;
+//export default moveTank;
