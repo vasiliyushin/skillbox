@@ -77,11 +77,14 @@ for (let i = 0; i <= roadMines.length - 1; i++) {
     if (roadMines[i] === false) {
         console.log(`танк переместился на ${position}`);
         position++;
-    } else if (searchMin < 1) {
-        console.log(`танк повреждён`);
+      } else if (searchMin < 1) {
+        console.log('танк поврежден');
+        console.log(`танк переместился на ${position}`);
+        position++;
         searchMin++;
-    } else {
+      } else {
+        console.log(`танк переместился на ${position}`);
         console.log('танк уничтожен');
-        break
-  }
+        break;
+      }
 }
